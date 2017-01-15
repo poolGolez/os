@@ -14,8 +14,8 @@ extern "C" void callConstructors() {
 		(*i)();
 }
 
-extern "C" void kernelMain(void* multiboot_structure, unsigned int magicnumber) {
-	printf("Hello World! --- sample Operating System by Pool");
+extern "C" void kernelMain(void* multiboot_structure, unsigned int /*magicnumber*/) {
+	printf("A new operating system by Pool");
 
 	while(1);
 }
